@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="nofollow">
+<title>margin-padding DEMO 3</title>
+<link rel="stylesheet" href="https://phanleminhthao-cssreset.googlecode.com/hg/reset.min.css">
+<style>
+.box0 {
+  width: 500px;
+  height: 50px;
+  background: #ccc;
+  margin: 0 auto;
+}
+.box1 {
+  width: 500px;
+  height: 50px;
+  background: blue;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+}
+.box2 {
+  /* width: 500px; */
+  width: 480px;/*padding分マイナスしている*/
+  /* height: 50px; */
+  height: 30px;/*padding分マイナスしている*/
+  background: red;
+  margin: 0 auto;
+  padding: 10px;
+}
+p {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.3;
+}
+</style>
+</head>
+<body>
+<!-- Start your code here -->
+
+<div class="box0">box0の中（paddingなし）</div>
+<div class="box1">box1の中（paddingあり）</div>
+<div class="box2">box2の中（paddingあり）</div>
+
+
+<p>box0とbox2の幅、高さは一緒。<br>テキストの位置はpadding分ずれる。<br>背景色もつく。</p>
+
+<!-- End your code here -->
+</body>
+</html>

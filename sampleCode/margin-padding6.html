@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="nofollow">
+<title>margin-padding DEMO 6</title>
+<link rel="stylesheet" href="https://phanleminhthao-cssreset.googlecode.com/hg/reset.min.css">
+<style>
+h1 {
+  font-size: 130%;
+  padding: 10px;
+}
+.boxA {
+  background: #50e3c2;
+  width: 500px;
+}
+.boxB, .boxC {
+  background: #fff;
+  width: 420px;
+  height: 170px;
+}
+.boxB {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.boxC {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 40px;
+}
+p {
+  margin-top: 20px;
+  line-height: 1.3;
+}
+</style>
+</head>
+<body>
+<!-- Start your code here -->
+
+<h1>marginとpaddingの使い方の悪い例</h1>
+
+<div class="boxA">
+  <div class="boxB">boxBの中</div>
+  <div class="boxC">boxCの中</div>
+</div>
+
+<p>要素間の余白に&nbsp;padding&nbsp;をとろうとしていて、要素内の余白に&nbsp;margin&nbsp;を指定してしまっている。<br>
+  これでは要素&nbsp;B&nbsp;と要素&nbsp;C&nbsp;との距離が空いていることにならない。<br>
+  背景色やボーダーなどが無ければ、普通に距離が空いているように見えるだろうが、背景色があるので、padding&nbsp;の領域も背景色が広がるので要素&nbsp;B&nbsp;と要素&nbsp;C&nbsp;はくっついた様に見えてしまう。<br>
+  また上下の余白は margin で取ってしまっているので、背景色がつかない。
+</p>
+
+<!-- End your code here -->
+</body>
+</html>
