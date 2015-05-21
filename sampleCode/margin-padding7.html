@@ -13,21 +13,35 @@
   padding-top: 20px;
 }
 .box, .box1 {
-  width:100%;
-/*  background: #ccc;*//*背景色を有効にすると・・・*/
+  text-align: center;
+  /* border: 1px solid #ccc; borderを有効にすると・・・*/
+/*background: #ccc;背景色を有効にすると・・・*/
+}
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+p {
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-size: 130%;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
 }
 </style>
 </head>
 <body>
 <!-- Start your code here -->
 
-<p>下記div間の余白をmarginで20px</p>
-<div class="box">div</div>
-<div class="box">div</div>
-<br>
-<p>下記div間の余白をpaddingで20px</p>
-<div class="box1">div</div>
-<div class="box1">div</div>
+<div class="wrapper">
+  <p>下記div間の余白をmarginで20px</p>
+  <div class="box"><img src="http://sozai.livedoor.biz/sozai_images/banner270_60_001.jpg" width="270" height="60"></div>
+  <div class="box"><img src="http://sozai.livedoor.biz/sozai_images/banner270_60_001.jpg" width="270" height="60"></div>
+  <br>
+  <p>下記div間の余白をpaddingで20px</p>
+  <div class="box1"><img src="http://sozai.livedoor.biz/sozai_images/banner270_60_001.jpg" width="270" height="60"></div>
+  <div class="box1"><img src="http://sozai.livedoor.biz/sozai_images/banner270_60_001.jpg" width="270" height="60"></div>
+</div>
 
 <!-- End your code here -->
 </body>

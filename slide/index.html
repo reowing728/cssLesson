@@ -26,6 +26,16 @@
 <link rel="stylesheet" media="screen" href="../animate.css">
 <!-- Basic black and white print styles -->
 <link rel="stylesheet" media="print" href="../core/print.css">
+<style>
+.clearfix{zoom:1}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+</style>
 <!--[if lt IE 9]>
 <script src="../html5shiv.min.js"></script>
 <![endif]-->
@@ -115,6 +125,30 @@
       <p class="slide">インテリジェンスさんがやってますやん！</p>
       <p class="slide"><strong>dots.（ドッツ）</strong>：<a href="http://eventdots.jp/" target="_blank">http://eventdots.jp/</a><br>
       →興味のあるのだけ登録して、メールが来る仕組み！<br>エンジニア向けが多いが、UI/UXやマーケティングなんかもありますよ。</p>
+    </section>
+
+    <section class="slide" id="online-learning">
+      <h2>オンライン学習サイト</h2>
+      <p>オンライン学習サイトも活用しよう！</p>
+      <ul>
+        <li>スクー：<a href="http://cssnite.jp/" target="_blank">http://cssnite.jp/</a></li>
+        <li>ドットインストール：<a href="http://html5fun.jp/" target="_blank">http://html5fun.jp/</a></li>
+        <li>CODEPREP：<a href="http://codeprep.jp/" target="_blank">http://codeprep.jp/</a></li>
+        <li>Codecademy：<a href="http://www.codecademy.com/" target="_blank">http://www.codecademy.com/</a><br>一部日本語だが基本英語。</li>
+      </ul>
+      <p>などなど。便利な世の中になったもんだ。</p>
+    </section>
+
+    <section class="slide" id="mailmagazine">
+      <h2>メルマガも活用</h2>
+      <p>メルマガも一応登録しておこう！</p>
+      <ul>
+        <li>MDN：<a href="http://www.mdn.co.jp/di/" target="_blank">http://www.mdn.co.jp/di/</a></li>
+        <li>CodeGrid：<a href="http://www.codegrid.net/" target="_blank">http://www.codegrid.net/</a></li>
+        <li>Frontend Weekly：<a href="https://frontendweekly.tokyo" target="_blank">https://frontendweekly.tokyo</a><br>一部日本語だが基本英語。</li>
+        <li>CodeGrid：<a href="http://www.codegrid.net/" target="_blank">http://www.codegrid.net/</a><br>こちらは有料。</li>
+      </ul>
+      <p>などなど。暇な時に読んでみる。</p>
     </section>
 
     <section class="slide" id="css-study">
@@ -234,7 +268,7 @@
     </section>
 
     <section class="slide" id="margin-padding8">
-      <h3>結果</h3>
+      <h3>悪い例の結果</h3>
       <p>要素間の余白に&nbsp;padding&nbsp;をとろうとしていて、要素内の余白に&nbsp;margin&nbsp;を指定してしまっている。<br>
         これでは要素&nbsp;B&nbsp;と要素&nbsp;C&nbsp;との距離が空いていることにならない。<br><br>
         背景色やボーダーなどが無ければ、普通に距離が空いているように見えるだろうが、背景色があるので、padding&nbsp;の領域も背景色が広がるので要素&nbsp;B&nbsp;と要素&nbsp;C&nbsp;はくっついた様に見えてしまう。<br><br>
@@ -249,9 +283,9 @@
       <p>sampleCode：margin-padding7.html&nbsp;参照</p>
       <p><a href="http://codepen.io/reowing728/pen/NqrQxO" target="_blank">http://codepen.io/reowing728/pen/NqrQxO</a></p>
       <div class="slide">
-        <p>marginでもpaddingでも、div間の余白が20px出来ているように見えるが、<br>背景色入れるとアウトー！<br>ボーダー入れてもアウトー！</p>
-        <p style="display: inline-block;"><img src="../img/bad2.png" height="250" width="400"></p><!--
-      --><p style="display: inline-block;margin-left: 20px;"><img src="../img/bad3.png" height="250" width="400"></p>
+        <p>marginでもpaddingでも、div間の余白が20px出来ているように見えるが、<br>背景色入れるとアウトー！ボーダー入れてもアウトー！</p><!--
+      --><p style="display: inline-block;">ボーダー入ってない場合<img src="../img/margin-padding7-1.png" height="430" width="430"></p><!--
+      --><p style="display: inline-block;margin-left: 20px;">ボーダー入った場合<img src="../img/margin-padding7-2.png" height="446" width="461"></p>
       </div>
     </section>
 
@@ -264,36 +298,97 @@
       </ul>
     </section>
 
-    <section class="slide" id="debug">
+    <section class="slide" id="debug1">
       <h2>CSSのデバッグ（確認）方法</h2>
       <ul class="slide">
         <li>各ブラウザのデベロッパーツール的なのを使おう。<br>ブラウザ上でCSSを書き換えたりしてその場で確認できる。</li>
-        <ul class="slide">
+        <ul class="slide" style="margin-bottom: 0;">
           <li>chromeだと右クリックで「要素を見る」。</li>
           <li>Firefoxだと右クリックで「要素を調査」。FireBugというのもあるがなくても良い。</li>
-          <li>IEも右クリックで「開発者ツール」。</li>
+          <li>IEもF12で「開発者ツール」。</li>
         </ul>
-        <li class="slide">ブラウザはスマホサイトのエミュレータにもなる。</li>
-        <ul>
-          <li class="slide">chrome標準機能だとさっきの「要素を見る」から、下記のスマホアイコンをポチッと。<br><img src="../img/chrome.png" height="45" width="103"></li>
-          <li class="slide">chrome拡張アドオンもあるよ。<a href="https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg?hl=ja" target="_blank">User-Agent Switcher for Chrome</a></li>
-        </ul>
+      </ul>
+      <p class="slide">こんな感じ<img src="../img/chromeDebug.png" height="331" width="600"></p>
+    </section>
+
+    <section class="slide" id="debug2">
+      <h2>CSSのデバッグ（確認）方法&nbsp;スマホサイト</h2>
+      <p>ブラウザはスマホサイトのエミュレータにもなる。もちろんPCサイト同様、HTML・CSSの内容見れて、書き換えたり出来る。</p>
+      <ul class="slide">
+        <li class="slide">chrome標準機能だとさっきの「要素を見る」から、下記のスマホアイコンをポチッと。<img style="margin: 0;" src="../img/chrome.png" height="45" width="103"><span>こんな感じになる<img style="margin-bottom: 0;" src="../img/chromeDebugSP.png" height="704" width="960"></span></li>
+        <li class="slide">chrome拡張アドオンもあるよ。<a href="https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg?hl=ja" target="_blank">User-Agent Switcher for Chrome</a></li>
       </ul>
     </section>
 
-    <section class="slide" id="inline-block1">
+    <section class="slide" id="debug3">
+      <h3>chrome以外</h3>
+      <ul>
+        <li>Firefoxもアドオンがある。<a href="https://addons.mozilla.org/ja/firefox/addon/user-agent-switcher/" target="_blank">User Agent Switcher</a><br><a href="http://ideahacker.net/2014/11/29/9432/" target="_blank">使い方参考記事</a></li>
+        <li>別のFirefoxもアドオンも一応使える。こちらはフィーチャーフォン（ガラケー）用に向いている。<br><a href="https://addons.mozilla.org/ja/firefox/addon/firemobilesimulator/" target="_blank">User Agent Switcher</a>：<a href="http://firemobilesimulator.org/?%CD%F8%CD%D1%CA%FD%CB%A1" target="_blank">使い方参考記事</a></li>
+        <li>safariも標準であるが、初期設定だと開発ツールがオフになってるので、設定>詳細で「メニューバーに"開発"メニューを表示」にチェックを入れる。<img style="margin: 0;" src="../img/safari.png" height="341" width="806">
+        <p>使い方は<a href="http://www.useful-notes.com/mac/safari_useragent/" target="_blank">参考記事</a>をご参照。</p></li>
+      </ul>
+    </section>
+
+    <section class="slide" id="debug4">
+      <h2>スマホサイトは最後は必ず実機で</h2>
+      <p>スマホサイトをPCのブラウザで確認するのは、<a href="http://iroha2p.net/entry/user-agent-camouflage" target="_blank">UA偽装</a>をしている。<br><strong>100%実機と同じとは限らない。</strong></p>
+      <p>レスポンシブデザインはまた別。UA偽装とは別で、ブラウザの表示領域を変更すれば表示が切り替わる。<br>でも最後は必ず実機で！！</p>
+    </section>
+
+    <section class="slide" id="debug5">
+      <h2>Debugまとめ</h2>
+      <ul>
+        <li>ブラウザの機能をつかってHTML、CSSの確認できるよー！</li>
+        <li>DWのプレビューとか当てにしないでー！</li>
+        <li>ブラウザの機能を使って、真似してみたいサイトのHTML、CSSはある程度コピーしたりして、真似て作れるので、是非試してみて！</li>
+      </ul>
+    </section>
+
+    <section class="slide" id="list">
       <h2>横並びのリストを作る</h2>
       <p>よくよくあるリストを横並びにする方法は色々ある。</p>
       <p>例えば</p>
       <ol class="slide">
-        <li>floatを使う</li>
+        <li>floatを使う（float: left;とかとか）</li>
         <li>display: inline-blockを使う</li>
         <li>display: table-cellを使う</li>
         <li>display: boxを使う</li>
         <li>display: flexを使う</li>
       </ol>
       <p class="slide">たくさんある。。。</p>
-      <p class="slide">今日は基本的な&nbsp;1&nbsp;と&nbsp;2&nbsp;を紹介。</p>
+      <p class="slide">今日は基本的な&nbsp;1&nbsp;と&nbsp;2&nbsp;を紹介。特に2を。</p>
+    </section>
+
+    <section class="slide" id="float1">
+      <h2>floatで横に並べる</h2>
+      <div class="clearfix">
+        <p style="float:left;width:50%;"></p>
+        <p style="float:right;width:50%;">左の図のようなレイアウトを作ってみることにしよう。</p>
+      </div>
+      <p>まずは単純にfloat:&nbsp;left;でやってみる。</p>
+      <p>sampleCode：float1.html&nbsp;参照</p>
+      <p><a href="http://codepen.io/reowing728/pen/OVRpwB/" target="_blank">http://codepen.io/reowing728/pen/OVRpwB/</a></p>
+      <p >さてさて、結果は。</p>
+    </section>
+
+    <section class="slide" id="float2">
+      <h3></h3>
+      <p>残念ながら、下記のようになる。</p>
+      <div class="clearfix">
+        <p style="float:left;width:50%;"><img src="../img/float.png" height="auto" width="400"></p>
+        <p style="float:right;width:50%;">細かい話は省くが、このように<span style="color:red;">「float:left」</span>された要素が連続すると、左上から詰めて配置されるようなレイアウトが行われるので、上記のような描画結果になってしまう。</p>
+      </div>
+    </section>
+
+    <section class="slide" id="float3">
+      <h3></h3>
+      <p>描画イメージはこんな感じ。</p>
+      <div class="clearfix">
+        <p style="float:left;width:50%;"><img src="../img/float2.png" height="auto" width="400"></p>
+        <p style="float:right;width:50%;">実現したい結果とは異なってくる。これを解決するには、たとえば高さをMAX値に固定で指定したり、例えば5つごとに<span style="color:red;">cler:left</span>を指定したり、5つごとを別のdiv要素で囲み、clearfix的な指定を行うなどという方法が必要となってくる。</p>
+        <p style="float:right;width:50%;">まあそういった解決方法も全然ありだが、別の解決方法も探ってみよう。</p>
+      </div>
     </section>
 
     <section class="slide" id="markup">
