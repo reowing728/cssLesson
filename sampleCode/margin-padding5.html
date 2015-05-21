@@ -14,11 +14,17 @@ h1 {
   padding: 40px;
   background: #50e3c2;
   width: 500px;
+  position: relative;
+}
+span {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .boxB, .boxC {
   background: #fff;
   width: 100%;
-  height: 170px;  
+  height: 170px;
 }
 .boxC {
   margin-top: 40px;
@@ -31,6 +37,7 @@ h1 {
 <h1>marginとpaddingの使い方の良い例</h1>
 
 <div class="boxA">
+  <span>boxAの中</span>
   <div class="boxB">boxBの中</div>
   <div class="boxC">boxCの中</div>
 </div>
