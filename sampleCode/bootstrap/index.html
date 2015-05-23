@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Bootstrap one column layout with Parallax effect, Animation | DEMO</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- For animation css library -->
+<link href="../../animate.min.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="100">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle no-scroll" data-toggle="dropdown" role="button"
+             aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="no-scroll" href="#">Action</a></li>
+              <li><a class="no-scroll" href="#">Another action</a></li>
+              <li><a class="no-scroll" href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a class="no-scroll" href="#">Separated link</a></li>
+              <li><a class="no-scroll" href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div id="home" class="home">
+    <div class="text-top">
+      <h1>Hello World</h1>
+      <h3>Bootstrap-based one column layout</h3>
+      <a href="#about" class="btn btn-success btn-lg">Sign up</a>
+    </div>
+  </div>
+
+  <div class="container section">
+      <h2 id="service">Our Service</h2>
+        <div class="row">
+          <div class="col-sm-4">
+              <div class="service">
+                  <i class="fa fa-cutlery main-i"></i>
+                  <div class="desc"><h3>タイトル</h3></div>
+                  <img src="./images/sample1.jpg" alt="img"  class="enimg">
+                  <p><a href="">サービスの紹介など</a></p>
+              </div>
+          </div>
+
+        <div class="col-sm-4">
+          <div class="service">
+              <i class="fa fa-cutlery main-i"></i>
+              <div class="desc"><h3>タイトル</h3></div>
+              <img src="./images/sample2.jpg" alt="img" class="enimg">
+              <p><a href="">サービスの紹介など</a></p>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="service">
+              <i class="fa fa-cutlery main-i"></i>
+              <div class="desc"><h3>タイトル</h3></div>
+              <img src="./images/sample3.jpg" alt="img" class="enimg">
+              <p><a href="">サービスの紹介などなど</a></p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div id="products">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2>Our Products</h2>
+              <h4>こだわり選び抜いた自信のプロダクト</h4>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="products-detail" class="pad-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Berceau (ベルソー)</h2>
+              </div>
+              <div class="panel-body">
+                ガジェット用トート「Berceau (ベルソー)」の誕生秘話 Berceau(ベルソー)の前モデルにあたる「RT.Basic 「RTB-1」」は、「Lightning」や「2nd」などの雑誌にも取り上げられるなど、密かな盛り上がりを見せている実力派トートで、筆者も普段から愛用し、使用レビューも書いています。このBerceau (ベルソー)は、そんなRTB-1をトート好きでガジェット好きの某OneMeスタッフが見た際、「ノートPC専用のポケットが付いてたらもっと便利なのに!」と発想したことがきっかけで、なんとその発想がそのまま盛り込まれて製品化されたバッグ。
+                <br><br>
+                <a href="#">More info >></a>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Berceau (ベルソー)</h2>
+              </div>
+              <div class="panel-body">
+                ガジェット用トート「Berceau (ベルソー)」の誕生秘話 Berceau(ベルソー)の前モデルにあたる「RT.Basic 「RTB-1」」は、「Lightning」や「2nd」などの雑誌にも取り上げられるなど、密かな盛り上がりを見せている実力派トートで、筆者も普段から愛用し、使用レビューも書いています。このBerceau (ベルソー)は、そんなRTB-1をトート好きでガジェット好きの某OneMeスタッフが見た際、「ノートPC専用のポケットが付いてたらもっと便利なのに!」と発想したことがきっかけで、なんとその発想がそのまま盛り込まれて製品化されたバッグ。
+                <br><br>
+                <a href="#">More info >></a>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/#products-detail-->
+
+  </div><!--.section-->
+
+  <div id="contact-a"></div>
+
+  <div id="hoge">このラインが画面中央にくるとボタンが大きくなります---------------------</div>
+  <div id="contact" class="container">
+    <h2>Contact US</h2>
+    <p class="p-center">お気軽にお問い合わせください。</p>
+    <div>
+    <button type="button" class="btn btn-default btn-contact
+      center-block btn-lg" aria-label="Left Align">
+      お問い合わせ&nbsp;<i class="glyphicon glyphicon-envelope"></i>
+    </button>
+    </div>
+    <div class="video">
+    <img src="./images/mockup.png" class="content-img">
+    </div>
+  </div>
+  <div id="hoge-end">&nbsp;</div>
+
+  <footer class="footer">
+    <div class="container"><br />
+      <p class="text-muted">Footer content here.</p>
+    </div>
+  </footer>
+
+<script src="../../jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(function() {
+  // scrollspyの起動
+  $('body').scrollspy({ target: 'nav.navbar' });
+
+  // contactボタン
+  var WindowHegiht = $(window).height() / 2;
+  var targetID = $("#hoge").offset().top;
+  function getScrollHeight(){
+   if($(window).scrollTop() > targetID - WindowHegiht){
+        $('.btn-contact').css({transform:'scale(2)'});
+      }else{
+        scale_flag = 'false';
+        $('.btn-contact').css({transform:'scale(1)'});
+      }
+    }
+  $(window).on("load scroll resize", getScrollHeight);
+
+  // smooth scroll
+  $('a[href^=#]').click(function(){
+    if(!$(this).hasClass("no-scroll")){
+      var speed = 1000;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+    }
+  });
+
+});
+</script>
+</body>
+</html>
