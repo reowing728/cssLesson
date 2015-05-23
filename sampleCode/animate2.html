@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="nofollow">
+<title>animate DEMO 2</title>
+<link rel="stylesheet" href="https://phanleminhthao-cssreset.googlecode.com/hg/reset.min.css">
+<style>
+.animation {
+  width: 160px;
+  height: 145px;
+  background-image: url(../img/103713.png);
+  background-size: 100%;
+  margin: 100px auto;
+  border: 3px solid #ccc;
+}
+
+/* アニメーション */
+.animation {
+  -webkit-animation:mystory 5s linear 0s infinite normal;
+}
+/* キーフレーム */
+@-webkit-keyframes mystory{
+  50%{ color: #fff; }
+  100%{-webkit-transform:rotate(360deg);}
+}
+</style>
+</head>
+<body>
+<!-- Start your code here -->
+
+<div class="animation">animationライブラリ使わないサンプル</div>
+
+<!-- End your code here -->
+</body>
+</html>
