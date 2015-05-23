@@ -156,7 +156,7 @@
         <li class="slide">CSS（Cascading Style Sheets、カスケーディング・スタイル・シート）とは、ウェブページのスタイルを指定するための言語。</li>
         <li class="slide">CSSは、HTMLと組み合わせて使用する言語。CSSだけでは何も表示できない。</li>
         <li class="slide">HTMLを装飾（デザイン）できるルール。</li>
-        <li class="slide">プログラム言語ではない。（sassって奴がいるけど最初は気にせずに）。怖くない。<br>画像なしで装飾（デザイン）できる良い奴！</li>
+        <li class="slide">プログラム言語ではない。基本的には。（sassって奴がいるけど最初は気にせずに）。怖くない。<br>画像なしで装飾（デザイン）できる良い奴！</li>
       </ul>
       <p class="slide">あとは専門のページをご覧あれ。<a href="http://www.htmq.com/csskihon/">http://www.htmq.com/csskihon/</a></p>
     </section>
@@ -407,7 +407,7 @@
       <p>描画イメージはこんな感じ。</p>
       <img src="../img/inline-block2.png" height="379" width="400">
       <p>上で揃えるために、<span style="color: red;">vertical-align:top;</span>にしておく必要がある。</p>
-      <p>このinline-blockの手法だと「行」のブロックでレイアウトしていることになる。2つの行ブロック<br>6つ目からは右に行けないから改行して、2行目から描画するイメージ。<br></p>
+      <p>このinline-blockの手法だと「行」のブロックでレイアウトしていることになる。<br>6つ目からは右に行けないから改行して、2行目から描画するイメージ。<br></p>
     </section>
 
     <section class="slide" id="inline-block3">
@@ -431,7 +431,7 @@
     <section class="slide" id="animation">
       <h2>さくっとアニメーション</h2>
       <p>CSSでアニメーションして動きを表現したい。<br>だがなかなか初心者にはハードルが高く感じる...</p>
-      <p class="slide">しかしさくっと3分クッキングのように使える方法があります！！</p>
+      <p class="slide">しかしさくっと3分クッキングのように使える方法がある！！</p>
       <p class="slide">こちら、<strong><a href="https://daneden.github.io/animate.css/" target="_blank">Animate CSS</a></strong>で簡単に料理してみましょう。</p>
       <div class="slide">
         <p>使い方は、jQueryのライブラリを使うような感覚で、まずanimate.cssを普通の外部CSSとして、読み込む。<br>(minifyされたものを使うと軽くなるのでモアベター！<br><a href="https://github.com/daneden/animate.css/blob/master/animate.min.css" target="_blank">https://github.com/daneden/animate.css/blob/master/animate.min.css</a>)</p>
@@ -441,7 +441,7 @@
       </div>
     </section>
 
-    <section class="slide" id="animation">
+    <section class="slide" id="animation2">
       <h2>アニメーションまとめ</h2>
       <p>超簡単ですね！！！動くと楽しい！！Javasctiptなしで動くなんて。</p>
       <p class="slide">ただし下記は頭に入れておこう！</p>
@@ -451,20 +451,59 @@
         <li class="slide">いつか自分で作れるものは、ライブラリなしで自分で作ろう。その方がパフォーマンスが良くなるよ！！</li>
         <li class="slide">CSSアニメーションで動かない場合は、がんばってJavascript（jQuery）で作ろう！！！次のステップですな。</li>
       </ul>
+    </section>
+
+    <section class="slide" id="animation4">
+      <h2>アニメーション補足</h2>
+      <p>自力で作ったらこんな感じというサンプルを一応置いてみる。<br>もはやプログラミングっぽい。。</p>
+      <p>sampleCode：animate2.html&nbsp;参照</p>
+      <p><a href="http://codepen.io/reowing728/pen/KpgLwK" target="_blank">http://codepen.io/reowing728/pen/KpgLwK</a></p>
+    </section>
+
+    <section class="slide" id="bootstrap">
+      <h2>ちょっと最後 応用編デモ（参考まで）</h2>
+      <p>ちょっと味気ないサンプルだけだと物足りないので、実際のページっぽい流行の動きのあるワンカラムレイアウトのデモだけを最後に見せておく。<br>退屈だった人はこちらで遊んでみて。</p>
+      <div class="slide">
+        <p>下記の技術などを使って、<strong>30分でそれっぽいサイトを作る。</strong><br>JS入れちゃってすみません。。結局やっぱ後々必要だから。</p>
+        <ul>
+          <li>Bootstrap：CSSフレームワーク</li>
+          <li>Parallax：かっこ良さ気なスクロールエフェクト</li>
+          <li>Scrollspy：見出しの自動スクロール（少しだけJS使う）</li>
+          <li>JSとCSS3：スクロールするとボタンサイズが変わるやつ</li>
+          <li>Animation.css：さっき紹介したやつ</li>
+        </ul>
+        <p style="font-weight: bold;"><a href="http://shared-blog.kddi-web.com/activity/291">CPIスタッフブログ</a>の動画説明の通りに作れば、なんかよくわからなくても作れるよ。<br>ちょっとここのサンプルは少々それに手を加えてる。</p>
+        <p>sampleCode：/bootstrap/index.html&nbsp;参照</p>
+        <p><a href="http://codepen.io/reowing728/gpwJMZ" target="_blank">http://codepen.io/reowing728/gpwJMZ</a></p>
       </div>
     </section>
 
-    <section class="slide" id="animation">
-      <h2>ちょっと最後に応用編デモ</h2>
-      <p>ちょっと味気ないサンプルだと物足りないので、流行の動きのあるワンカラムレイアウトのデモを最後にお見せします。</p>
-      <p class="slide">しかしさくっと3分クッキングのように使える方法があります！！</p>
-      <p class="slide">こちら、<strong><a href="https://daneden.github.io/animate.css/" target="_blank">Animate CSS</a></strong>で簡単に料理してみましょう。</p>
-      <div class="slide">
-        <p>使い方は、jQueryのライブラリを使うような感覚で、まずanimate.cssを普通の外部CSSとして、読み込む。<br>(minifyされたものを使うと軽くなるのでモアベター！<br><a href="https://github.com/daneden/animate.css/blob/master/animate.min.css" target="_blank">https://github.com/daneden/animate.css/blob/master/animate.min.css</a>)</p>
-        <p>使ってみましょう！</p>
-        <p>sampleCode：animate.html&nbsp;参照</p>
-        <p><a href="http://codepen.io/reowing728/pen/zGKjqY" target="_blank">http://codepen.io/reowing728/pen/zGKjqY</a></p>
-      </div>
+    <section class="slide" id="faq">
+      <h2>聞かれそうなFAQ</h2>
+      <ul>
+        <li>何使ってHTML/CSS書いてるか？<br>→Sublime Text 3</li>
+        <li>どうやったらCSSを覚えれるか？<br>→TRY&nbsp;&amp;&nbsp;ERRORしかない</li>
+        <li>これからコーディング勉強するならHTML5から？<br>→HTML4.01、XHTMLからの方が良いと思う</li>
+        <li>WindowsとMacどっちが良い？<br>どっちでも良い。PJに合わせよう。どちらも使えたらどこ行っても便利。</li>
+        <li>CSS3は使って良い？<br>→対象ブラウザ次第。でも知っておいたほうが良い。既にCSS4もつくられてるよー</li>
+      </ul>
+    </section>
+
+    <section class="slide" id="homework">
+      <h2>課題</h2>
+      <p>下記のカンプをちゃんとHTMLとCSSでIE6でも崩れないようにコーディングできたら、まずは基本編クリアー。<br>気が向いたらやってみて。</p>
+      <p>希望あればコードレビューするのでご連絡を。</p>
+    </section>
+
+    <section class="slide" id="ending">
+      <h2>最後のまとめ</h2>
+      <ul>
+        <li>CSSが出来るとデザインの幅が広がる。サイトがリッチになる。<br>てかWeb/ECサイト作るなら必須！</li>
+        <li>デザイナーもCSSでどこまで出来るか知っておくことが、UI/UX設計に繋がる。<br>ディレクターもね。</li>
+        <li>画像でなくCSSで出来るところはCSSにしよう。サイトパフォーマンス上がる！</li>
+        <li>とにかく作って試そう！！！</li>
+      </ul>
+      <p class="slide" style="text-align: center; font-weight: bold; font-size: 140%;">とにかく勉強。</p>
     </section>
 
   </div>
@@ -484,7 +523,7 @@
 $(function() {
   $.deck('.slide');
   var w = $('.js-waiting').width();
-  $('.js-waiting').css({width: w});
+  $('.js-waiting').css({width: w/2});
 });
 </script>
 
