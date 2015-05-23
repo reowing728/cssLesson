@@ -23,7 +23,7 @@
 <!-- Transition theme. More available in /themes/transition/ or create your own. -->
 <link rel="stylesheet" media="screen" href="../themes/transition/horizontal-slide.css">
 <!-- For animation css library -->
-<link rel="stylesheet" media="screen" href="../animate.css">
+<link rel="stylesheet" media="screen" href="../animate.min.css">
 <!-- Basic black and white print styles -->
 <link rel="stylesheet" media="print" href="../core/print.css">
 <style>
@@ -47,8 +47,8 @@
 
     <!-- Begin slides -->
     <section class="slide" id="waiting">
-      <img style="margin:20px auto 0 auto;" src="../img/sublime.jpg" height="701" width="1240" alt="">
-      <p class="animated bounce infinite" style="position:fixed; top: 40%; left:-100%; right:-100%; width:645px;margin: 0 auto; color:#fff;font-weight: bold;font-size: 2.0em;">少々お待ちくださいませ♪</p>
+      <img class="js-img" style="margin:20px auto 0 auto; position: relative;" src="../img/sublime.jpg" height="701" width="1240" alt="">
+      <p class="animated bounce infinite js-waiting" style="position: absolute; top: 30%; top: 300px; left: -100%; right: -100%; text-align: center; margin: 0 auto; color:#fff;font-weight: bold;font-size: 2.0em;">少々お待ちくださいませ♪</p>
     </section>
 
     <section class="slide" id="title-slide">
@@ -144,7 +144,6 @@
       <p>メルマガとかも一応登録しておこう！</p>
       <ul>
         <li>MDN：<a href="http://www.mdn.co.jp/di/" target="_blank">http://www.mdn.co.jp/di/</a></li>
-        <li>CodeGrid：<a href="http://www.codegrid.net/" target="_blank">http://www.codegrid.net/</a></li>
         <li>Frontend Weekly：<a href="https://frontendweekly.tokyo" target="_blank">https://frontendweekly.tokyo</a><br>一部日本語だが基本英語。</li>
         <li>CodeGrid：<a href="http://www.codegrid.net/" target="_blank">http://www.codegrid.net/</a><br>こちらは有料。</li>
       </ul>
@@ -316,7 +315,7 @@
       <h2>CSSのデバッグ&nbsp;スマホサイト</h2>
       <p>ブラウザはスマホサイトのエミュレータにもなる。もちろんPCサイト同様、HTML・CSSの内容見れて、書き換えたり出来る。</p>
       <ul>
-        <li class="slide">chrome標準機能だとさっきの「要素を見る」から、下記のスマホアイコンをポチッと。<img style="margin: 0;" src="../img/chrome.png" height="45" width="103"><span>こんな感じになる<img style="margin-bottom: 0;" src="../img/chromeDebugSP.png" height="704" width="960"></span></li>
+        <li class="slide">chrome標準機能だとさっきの「要素を見る」から、下記のスマホアイコンをポチッと。<img style="margin: 0;" src="../img/chrome.png" height="45" width="103"><span>こんな感じになる<img style="margin-bottom: 0;" src="../img/chromeDebugSP.png" height="352" width="480"></span></li>
         <li class="slide">chrome拡張アドオンもあるよ。<a href="https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg?hl=ja" target="_blank">User-Agent Switcher for Chrome</a></li>
       </ul>
     </section>
@@ -408,7 +407,7 @@
       <p>描画イメージはこんな感じ。</p>
       <img src="../img/inline-block2.png" height="379" width="400">
       <p>上で揃えるために、<span style="color: red;">vertical-align:top;</span>にしておく必要がある。</p>
-      <p>この手法だと「行」でレイアウトしていることになる。6つ目からは右に行けないから改行しているイメージ。<br></p>
+      <p>このinline-blockの手法だと「行」のブロックでレイアウトしていることになる。2つの行ブロック<br>6つ目からは右に行けないから改行して、2行目から描画するイメージ。<br></p>
     </section>
 
     <section class="slide" id="inline-block3">
@@ -424,9 +423,48 @@
     <section class="slide" id="inline-block4">
       <h2>横並びのまとめ</h2>
       <ul>
-        <li>floatも全然良いが、少しHTMLのコードがうるさくなる。floatのクリア漏れに注意。</li>
+        <li>floatも全然良いが、少しHTMLのコードが複雑になる、もしくは柔軟性に欠ける。floatのクリア漏れに注意。</li>
         <li>少々トリッキーなHTMLの書き方になるが、inline-blockを使うとシンプルなブロック構成で柔軟な対応が可能になる。</li>
       </ul>
+    </section>
+
+    <section class="slide" id="animation">
+      <h2>さくっとアニメーション</h2>
+      <p>CSSでアニメーションして動きを表現したい。<br>だがなかなか初心者にはハードルが高く感じる...</p>
+      <p class="slide">しかしさくっと3分クッキングのように使える方法があります！！</p>
+      <p class="slide">こちら、<strong><a href="https://daneden.github.io/animate.css/" target="_blank">Animate CSS</a></strong>で簡単に料理してみましょう。</p>
+      <div class="slide">
+        <p>使い方は、jQueryのライブラリを使うような感覚で、まずanimate.cssを普通の外部CSSとして、読み込む。<br>(minifyされたものを使うと軽くなるのでモアベター！<br><a href="https://github.com/daneden/animate.css/blob/master/animate.min.css" target="_blank">https://github.com/daneden/animate.css/blob/master/animate.min.css</a>)</p>
+        <p>使ってみましょう！</p>
+        <p>sampleCode：animate.html&nbsp;参照</p>
+        <p><a href="http://codepen.io/reowing728/pen/zGKjqY" target="_blank">http://codepen.io/reowing728/pen/zGKjqY</a></p>
+      </div>
+    </section>
+
+    <section class="slide" id="animation">
+      <h2>アニメーションまとめ</h2>
+      <p>超簡単ですね！！！動くと楽しい！！Javasctiptなしで動くなんて。</p>
+      <p class="slide">ただし下記は頭に入れておこう！</p>
+      <ul>
+        <li class="slide">animation.cssライブラリは、サイトでは使わない不要なアニメーション用のCSSも含んでいるので、サイト全体で読み込むのはパフォーマンスに影響するので慎重に。</li>
+        <li class="slide">サポートしていないブラウザ環境などあるので、必ず検証対象のブラウザ、端末で確認を！！</li>
+        <li class="slide">いつか自分で作れるものは、ライブラリなしで自分で作ろう。その方がパフォーマンスが良くなるよ！！</li>
+        <li class="slide">CSSアニメーションで動かない場合は、がんばってJavascript（jQuery）で作ろう！！！次のステップですな。</li>
+      </ul>
+      </div>
+    </section>
+
+    <section class="slide" id="animation">
+      <h2>ちょっと最後に応用編デモ</h2>
+      <p>ちょっと味気ないサンプルだと物足りないので、流行の動きのあるワンカラムレイアウトのデモを最後にお見せします。</p>
+      <p class="slide">しかしさくっと3分クッキングのように使える方法があります！！</p>
+      <p class="slide">こちら、<strong><a href="https://daneden.github.io/animate.css/" target="_blank">Animate CSS</a></strong>で簡単に料理してみましょう。</p>
+      <div class="slide">
+        <p>使い方は、jQueryのライブラリを使うような感覚で、まずanimate.cssを普通の外部CSSとして、読み込む。<br>(minifyされたものを使うと軽くなるのでモアベター！<br><a href="https://github.com/daneden/animate.css/blob/master/animate.min.css" target="_blank">https://github.com/daneden/animate.css/blob/master/animate.min.css</a>)</p>
+        <p>使ってみましょう！</p>
+        <p>sampleCode：animate.html&nbsp;参照</p>
+        <p><a href="http://codepen.io/reowing728/pen/zGKjqY" target="_blank">http://codepen.io/reowing728/pen/zGKjqY</a></p>
+      </div>
     </section>
 
   </div>
@@ -445,6 +483,8 @@
 <script>
 $(function() {
   $.deck('.slide');
+  var w = $('.js-waiting').width();
+  $('.js-waiting').css({width: w});
 });
 </script>
 
