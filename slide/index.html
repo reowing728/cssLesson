@@ -288,7 +288,7 @@
         背景色やボーダーなどが無ければ、普通に距離が空いているように見えるだろうが、背景色があるので、padding&nbsp;の領域も背景色が広がるので<strong>要素boxB&nbsp;と要素boxC&nbsp;はくっついた様に見えてしまう。</strong><br><br>
         また上下の余白は&nbsp;margin&nbsp;で取ってしまっているので、背景色がつかない。
       </p>
-      <p><img src="../img/bad_result.png" height="390" width="502"></p>
+      <p><img src="../img/bad_result.png" height="390" width="502" alt=""></p>
     </section>
 
     <section class="slide" id="margin-padding10">
@@ -298,8 +298,8 @@
       <p><a href="http://codepen.io/reowing728/pen/NqrQxO" target="_blank">http://codepen.io/reowing728/pen/NqrQxO</a></p>
       <div class="slide">
         <p>marginでもpaddingでも、div間の余白が20px出来ているように見えるが、<br>背景色入れるとアウトー！ボーダー入れてもアウトー！</p><!--
-      --><p style="display: inline-block;">ボーダー入ってない場合<img src="../img/margin-padding7-1.png" height="430" width="430"></p><!--
-      --><p style="display: inline-block;margin-left: 20px;">ボーダー入った場合<img src="../img/margin-padding7-2.png" height="446" width="461"></p>
+      --><p style="display: inline-block;">ボーダー入ってない場合<img src="../img/margin-padding7-1.png" height="430" width="430" alt=""></p><!--
+      --><p style="display: inline-block;margin-left: 20px;">ボーダー入った場合<img src="../img/margin-padding7-2.png" height="446" width="461" alt=""></p>
       </div>
     </section>
 
@@ -311,37 +311,40 @@
         <li>コードも解釈が難しい汚いコードになり、メンテナンス性も悪くなるので、正しく使いわけよう！</li>
       </ul>
       <ul class="slide">
-        <li>marginの使いどころ</li>
-        <ul>
-          <li>borderを基準に（ない時もあると仮定して）borderの外側に余白とりたいとき</li>
-          <li>余白に背景色、背景画像を適用したくないとき</li>
-        </ul>
-        <li>paddingの使いどころ</li>
+        <li>marginの使いどころ
+          <ul>
+            <li>borderを基準に（ない時もあると仮定して）borderの外側に余白とりたいとき</li>
+            <li>余白に背景色、背景画像を適用したくないとき</li>
+          </ul>
+        </li>
+        <li>paddingの使いどころ
           <ul>
             <li>borderを基準に（ない時もあると仮定して）borderの内側に余白とりたいとき</li>
             <li>余白に背景色、背景画像を適用したいとき</li>
           </ul>
+        </li>
       </ul>
     </section>
 
     <section class="slide" id="debug1">
       <h2>CSSのデバッグ（確認）方法</h2>
       <ul class="slide">
-        <li>各ブラウザのデベロッパーツール的なのを使おう。<br>ブラウザ上でCSSを書き換えたりしてその場で確認できる。</li>
-        <ul class="slide" style="margin-bottom: 0;">
-          <li>chromeだと右クリックで「要素を見る」。</li>
-          <li>Firefoxだと右クリックで「要素を調査」。FireBugというのもあるがなくても良い。</li>
-          <li>IEもF12で「開発者ツール」。</li>
-        </ul>
+        <li>各ブラウザのデベロッパーツール的なのを使おう。<br>ブラウザ上でCSSを書き換えたりしてその場で確認できる。
+          <ul class="slide" style="margin-bottom: 0;">
+            <li>chromeだと右クリックで「要素を見る」。</li>
+            <li>Firefoxだと右クリックで「要素を調査」。FireBugというのもあるがなくても良い。</li>
+            <li>IEもF12で「開発者ツール」。</li>
+          </ul>
+        </li>
       </ul>
-      <p class="slide">こんな感じ<img src="../img/chromeDebug.png" height="331" width="600"></p>
+      <p class="slide">こんな感じ<img src="../img/chromeDebug.png" height="331" width="600" alt=""></p>
     </section>
 
     <section class="slide" id="debug2">
       <h2>CSSのデバッグ&nbsp;スマホサイト</h2>
       <p>ブラウザはスマホサイトのエミュレータにもなる。もちろんPCサイト同様、HTML・CSSの内容見れて、書き換えたり出来る。</p>
       <ul>
-        <li class="slide">chrome標準機能だとさっきの「要素を見る」から、下記のスマホアイコンをポチッと。<img style="margin: 0;" src="../img/chrome.png" height="45" width="103"><span>こんな感じになる<img style="margin: 0;" src="../img/chromeDebugSP.png" height="352" width="480"></span></li>
+        <li class="slide">chrome標準機能だとさっきの「要素を見る」から、下記のスマホアイコンをポチッと。<img style="margin: 0;" src="../img/chrome.png" height="45" width="103" alt=""><span>こんな感じになる<img style="margin: 0;" src="../img/chromeDebugSP.png" height="352" width="480" alt=""></span></li>
         <li class="slide">chrome拡張アドオンもあるよ。<a href="https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg?hl=ja" target="_blank">User-Agent Switcher for Chrome</a></li>
       </ul>
     </section>
@@ -351,7 +354,7 @@
       <ul>
         <li>Firefoxもアドオンがある。<a href="https://addons.mozilla.org/ja/firefox/addon/user-agent-switcher/" target="_blank">User Agent Switcher</a><br><a href="http://ideahacker.net/2014/11/29/9432/" target="_blank">使い方参考記事</a></li>
         <li>別のFirefoxもアドオンも一応使える。こちらはフィーチャーフォン（ガラケー）用に向いている。<br><a href="https://addons.mozilla.org/ja/firefox/addon/firemobilesimulator/" target="_blank">User Agent Switcher</a>：<a href="http://firemobilesimulator.org/?%CD%F8%CD%D1%CA%FD%CB%A1" target="_blank">使い方参考記事</a></li>
-        <li>safariも標準であるが、初期設定だと開発ツールがオフになってるので、設定>詳細で「メニューバーに"開発"メニューを表示」にチェックを入れる。<img style="margin: 0;" src="../img/safari.png" height="341" width="806">
+        <li>safariも標準であるが、初期設定だと開発ツールがオフになってるので、設定>詳細で「メニューバーに"開発"メニューを表示」にチェックを入れる。<img style="margin: 0;" src="../img/safari.png" height="341" width="806" alt="">
         <p>使い方は<a href="http://www.useful-notes.com/mac/safari_useragent/" target="_blank">参考記事</a>をご参照。</p></li>
       </ul>
     </section>
@@ -389,7 +392,7 @@
     <section class="slide" id="float1">
       <h2>floatで横に並べる</h2>
       <div class="clearfix">
-        <p style="float:left;width:50%;"><img src="../img/inline-block.png" height="379" width="400"></p>
+        <p style="float:left;width:50%;"><img src="../img/inline-block.png" height="379" width="400" alt=""></p>
         <p style="float:right;width:50%;">左の図のようなレイアウトを作ってみることにしよう。</p>
       </div>
       <p>まずは単純にfloat:&nbsp;left;でやってみる。</p>
@@ -399,19 +402,19 @@
     </section>
 
     <section class="slide" id="float2">
-      <h2></h2>
+      <h3>&nbsp;</h3>
       <p>残念ながら、下記のようになる。</p>
       <div class="clearfix">
-        <p style="float:left;width:50%;"><img src="../img/float.png" height="379" width="400"></p>
+        <p style="float:left;width:50%;"><img src="../img/float.png" height="379" width="400" alt=""></p>
         <p style="float:right;width:50%;">細かい話は省くが、このように<span style="color:red;">「float:left」</span>された要素が連続すると、<strong>左上から詰めて</strong>配置されるようなレイアウトが行われるので、左のような描画結果になってしまう。</p>
       </div>
     </section>
 
     <section class="slide" id="float3">
-      <h2></h2>
+      <h3>&nbsp;</h3>
       <p>描画イメージはこんな感じ。</p>
       <div class="clearfix">
-        <p style="float:left;width:50%;"><img src="../img/float2.png" height="auto" width="400"></p>
+        <p style="float:left;width:50%;"><img src="../img/float2.png" height="379" width="400" alt=""></p>
         <p style="float:right;width:50%;">実現したい結果とは異なってくる。<br>これを解決するには、例えば高さをMAX値に固定で指定したり、5つごとに<span style="color:red;">clear:left</span>を指定したり、5つごとを別のul要素で囲み、clearfix的な指定を行うなどという方法が必要となってくる。</p>
         <p style="float:right;width:50%;">まあそういった解決方法も全然ありだが、別の解決方法も探ってみよう。</p>
       </div>
@@ -423,15 +426,15 @@
       <p>sampleCode：inline-block.html&nbsp;参照</p>
       <p><a href="http://codepen.io/reowing728/pen/XbjeYV" target="_blank">http://codepen.io/reowing728/pen/XbjeYV</a></p>
       <div class="clearfix slide">
-        <p style="float:left;width:50%;"><img src="../img/inline-block.png" height="379" width="400"></p>
+        <p style="float:left;width:50%;"><img src="../img/inline-block.png" height="379" width="400" alt=""></p>
         <p style="float:right;width:50%;">意図したレイアウトに配置できた。<br>HTMLもシンプルになる。<br>5つごとに何かする必要もない。<br>高さも指定いらずで柔軟に対応できる。</p>
       </div>
     </section>
 
     <section class="slide" id="inline-block2">
-      <h2></h2>
+      <h3>&nbsp;</h3>
       <p>描画イメージはこんな感じ。</p>
-      <img src="../img/inline-block2.png" height="379" width="400">
+      <img src="../img/inline-block2.png" height="379" width="400" alt="">
       <p>上で揃えるために、<span style="color: red;">vertical-align:top;</span>にしておく必要がある。</p>
       <p>このinline-blockの手法だと「行」のブロックでレイアウトしていることになる。<br>6つ目からは右に行けないから改行して、2行目から描画するイメージ。<br></p>
     </section>
@@ -491,7 +494,7 @@
       <h2>ちょっと最後 応用編デモ（参考まで）</h2>
       <p>ちょっと味気ないサンプルだけだと物足りない方もいるかもなので、<br>実際のページっぽい流行の動きのあるワンカラムレイアウトのデモだけを最後に見せておく。<br>退屈だった人はこちらで遊んでみて。</p>
       <div class="slide">
-        <p>下記の技術などを使って、<strong>30分でそれっぽいサイトを作る。</strong><br>JS入れちゃってすみません。。結局やっぱ後々必要だから。</p>
+        <p>下記の技術などを使って、<strong>30分でそれっぽいサイトを作れる。</strong><br>JS入れちゃってすみません。。結局やっぱ後々必要だから。</p>
         <ul>
           <li>Bootstrap：CSSフレームワーク</li>
           <li>Parallax：かっこ良さ気なスクロールエフェクト</li>
@@ -510,18 +513,19 @@
     <section class="slide" id="faq">
       <h2>聞かれそうなFAQ</h2>
       <ul>
-        <li>何使ってHTML/CSS書いてるか？<br>→Sublime Text 3</li>
-        <li>どうやったらCSSを覚えれるか？<br>→TRY&nbsp;&amp;&nbsp;ERRORしかない</li>
-        <li>これからコーディング勉強するならHTML5から？<br>→HTML4.01、XHTMLからの方が良いと思う</li>
-        <li>WindowsとMacどっちが良い？<br>どっちでも良い。PJに合わせよう。どちらも使えたらどこ行っても便利。</li>
-        <li>CSS3は使って良い？<br>→対象ブラウザ次第。でも知っておいたほうが良い。既にCSS4もつくられてるよー<br>ブラウザの</li>
+        <li class="slide">何使ってHTML/CSS書いてるか？<br>→Sublime Text 3</li>
+        <li class="slide">どうやったらCSSを覚えれるか？<br>→TRY&nbsp;&amp;&nbsp;ERRORしかない</li>
+        <li class="slide">これからコーディング勉強するならHTML5、CSS3から？<br>→HTML4.01、XHTMLからの方が良いと思う。CSSは2.1から。</li>
+        <li class="slide">WindowsとMacどっちが良い？<br>どっちでも良い。PJに合わせよう。どちらも使えたらどこ行っても便利。</li>
+        <li class="slide">CSS3は使って良い？<br>→対象ブラウザ次第。でも知っておいたほうが良い。既にCSS4もつくられてるよー<br>ブラウザ対応状況は<a href="http://caniuse.com/#cats=CSS">http://caniuse.com/#cats=CSS</a>で確認できるよー。</li>
       </ul>
     </section>
 
     <section class="slide" id="homework">
       <h2>ホームワーク</h2>
-      <p>下記のカンプをちゃんとHTMLとCSSでIE6でも崩れないようにコーディングできたら、まずは超基本編クリアー。<br>気が向いたらやってみて。</p>
-      <p>希望あればコードレビューするのでご連絡を。</p>
+      <p>下記のカンプをちゃんとHTMLとCSSでIE6でも崩れないようにコーディングできたら、<br>まずは超基本編クリアー。気が向いたらやってみて。</p>
+      <p>希望あればコードレビューするのでご連絡を。</p><!--
+   --><p style="display: inline-block; vertical-align: top; margin-right: 20px;">sampleCode/homework</p>
     </section>
 
     <section class="slide" id="ending">
@@ -536,19 +540,20 @@
     </section>
 
     <section class="slide" id="thanks">
-      <h3 class="js-thanks" style="margin: 0; font-size: 100%;">
-        <pre><code><p style="text-align: center;">&lt;p class=&quot;thanks&quot;&gt;Thank you for your attention.&lt;/p&gt;</p><p style="text-align: center;">&lt;p class=&quot;thanks-jp&quot;&gt;ご清聴ありがとうございました。&lt;/p&gt;</p></code></pre>
-      </h3>
+      <h3 style="display: none;">&nbsp;</h3>
+      <div class="js-thanks" style="margin: 0; font-size: 100%;">
+        <pre style="text-align: center;"><code>&lt;p class=&quot;thanks&quot;&gt;Thank you for your attention.&lt;/p&gt;<br>&lt;p class=&quot;thanks-jp&quot;&gt;ご清聴ありがとうございました。&lt;/p&gt;</code></pre>
+      </div>
     </section>
 
     <!-- deck.navigation snippet -->
-    <div aria-role="navigation">
+    <div>
       <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
       <a href="#" class="deck-next-link" title="Next">&#8594;</a>
     </div>
 
     <!-- deck.status snippet -->
-    <p class="deck-status" aria-role="status">
+    <p class="deck-status">
       <span class="deck-status-current"></span>
       /
       <span class="deck-status-total"></span>
@@ -579,7 +584,7 @@
 $(function() {
   $.deck('.slide');
 
-  // waiting
+  //   // waiting
   var w = $('.js-waiting').width();
   $('.js-waiting').css({width: w/2});
 

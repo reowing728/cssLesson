@@ -16,13 +16,29 @@
 }
 
 /* アニメーション */
+/* animation-name animation-duration animation-timing-function animation-delay  animation-iteration-count animation-direction の順番に書く*/
 .animation {
-  -webkit-animation:kaiten 5s linear 0s infinite normal;
+  -moz-animation: kaiten 5s linear 0s infinite normal;
+  -webkit-animation: kaiten 5s linear 0s infinite normal;
+  -o-animation: kaiten 5s linear 0s infinite normal;
+  -ms-animation: kaiten 5s linear 0s infinite normal;
 }
 /* キーフレーム */
-@-webkit-keyframes kaiten{
+@-moz-keyframes kaiten {
+  50%{ color: #fff; }
+  100%{-moz-transform:rotate(360deg);}
+}
+@-webkit-keyframes kaiten {
   50%{ color: #fff; }
   100%{-webkit-transform:rotate(360deg);}
+}
+@-o-keyframes kaiten {
+  50%{ color: #fff; }
+  100%{-o-transform:rotate(360deg);}
+}
+@-ms-keyframes kaiten {
+  50%{ color: #fff; }
+  100%{-ms-transform:rotate(360deg);}
 }
 </style>
 </head>
