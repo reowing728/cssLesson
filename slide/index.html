@@ -77,23 +77,23 @@
 
     <section class="slide" id="self-introduction2">
       <h2>自己紹介（ECP卒業後）</h2>
-      <ul>
-        <li>
+      <ul style="margin-bottom: 0;">
+        <li style="padding-bottom: 0;">
           <h3>一応W3C認定メンバーであるWEB制作会社</h3>
-          <p>フロントエンドエンジニア<br>コーポレートサイトやキャンペーンサイトやガリガリコーディング。<br>
+          <p style="margin-bottom: 0;">フロントエンドエンジニア<br>コーポレートサイトやキャンペーンサイトやガリガリコーディング。<br>
           ディレクターいないに等しいので社内フロントエンドメンバーのディレクションも。</p>
         </li>
       </ul>
-      <p class="slide" style="line-height:1.1; margin-left: 50px;">色々とありまして...そして縁ありまして。。。</p>
-      <ul>
-        <li class="slide">
+      <p class="slide" style="line-height:1.1; margin-left: 2em; margin-top: 1em;">色々とありまして...そして縁ありまして。。。</p>
+      <ul style="margin-bottom: 0;">
+        <li class="slide" style="padding-bottom: 0;">
           <h3>DeNA</h3>
           <p>SEIYUドットコムのフロントエンドエンジニア<br>
           要件定義、機能追加・開発、UI改修、CVR改善施策、GA・サイカタの実装、運用ツール作成、一部ディレクターの業務サポート。etc...<br>
           <a href="http://www.the-seiyu.com" target="_blank">SEIYUドットコムのネットスーパ</a>使ってみてね！</p>
-          <p class="slide" style="position: absolute; top:140px;left:670px;"><img style="display:inline-block;position:relative;" src="../img/seiyu.jpg" height="150" width="150" alt=""><span style="display:inline-block;position:absolute;top: 60px;left:170px;">盛勇（SEIYU）です！</span></p>
         </li>
       </ul>
+      <p class="slide" style="margin-bottom: 0; margin-left: 3em;"><img style="display:inline-block; margin-bottom: 0;" src="../img/seiyu.jpg" height="150" width="150" alt=""><span style="display:inline-block; vertical-align: top; margin-left: 1em; margin-top: 2em;">盛勇（SEIYU）です！</span></p>
     </section>
 
     <section class="slide" id="seminar">
@@ -149,7 +149,7 @@
       <p>メルマガとかも一応登録しておこう！</p>
       <ul>
         <li>MDN：<a href="http://www.mdn.co.jp/di/" target="_blank">http://www.mdn.co.jp/di/</a></li>
-        <li>Frontend Weekly：<a href="https://frontendweekly.tokyo" target="_blank">https://frontendweekly.tokyo</a><br>一部日本語だが基本英語。</li>
+        <li>Frontend Weekly：<a href="https://frontendweekly.tokyo" target="_blank">https://frontendweekly.tokyo</a></li>
         <li>CodeGrid：<a href="http://www.codegrid.net/" target="_blank">http://www.codegrid.net/</a><br>こちらは有料。</li>
       </ul>
       <p>などなど。暇な時に読んでみる。</p>
@@ -180,11 +180,11 @@
     <section class="slide" id="how-to-master-css">
       <h2>CSSを習得するには？</h2>
       <ul>
+        <li class="slide">とりあえず作ろう！ツール？DW？&nbsp;なくても作れるやん！PCがあれば。<br>お財布に優しい奴！</li>
         <li class="slide">基本のHTMLを書けるようになろう！HTMLとCSSはセット！</li>
         <li class="slide">HTMLもプログラミング言語ではない。基本は文書、マークアップ言語。<br>（大きいサイトなどでは確かにプログラミング知識は必要になってくるが。。）</li>
         <li class="slide">スマホサイトやレスポンシブ確かに重要。でも基本はPCサイト作れてから！</li>
         <li class="slide">正解は一つじゃない。色々な方法、組み合わせで実現できる！</li>
-        <li class="slide">とりあえず作ろう！ツール？DW？&nbsp;なくても作れるやん！PCがあれば。<br>お財布に優しい奴！</li>
         <li class="slide">バナーの練習のように、真似をするのも良いね。</li>
         <li class="slide">あとは下記を繰り返すのみ！
           <ul>
@@ -249,13 +249,6 @@
         <p>sampleCode：margin-padding3.html&nbsp;参照</p>
         <p><a href="http://codepen.io/reowing728/pen/QbEYqK" target="_blank">http://codepen.io/reowing728/pen/QbEYqK</a></p>
       </div>
-    </section>
-
-    <section class="slide" id="margin-padding6">
-      <h2>marginとpaddingを一緒に使うと...</h2>
-      <p>一つの要素（divなど）にmarginとpaddingを一緒に使うと、先ほど見せた下図のようになるのがわかる。それぞれの特性を理解してるとよりわかりやすい。</p>
-      <p><img src="../img/boxModel.png" height="500" width="500" alt=""></p>
-      <p>一つの要素にmargin, padding, borderを使って試してみて。</p>
     </section>
 
     <section class="slide" id="margin-padding7">
@@ -415,7 +408,7 @@
       <p>描画イメージはこんな感じ。</p>
       <div class="clearfix">
         <p style="float:left;width:50%;"><img src="../img/float2.png" height="379" width="400" alt=""></p>
-        <p style="float:right;width:50%;">実現したい結果とは異なってくる。<br>これを解決するには、例えば高さをMAX値に固定で指定したり、5つごとに<span style="color:red;">clear:left</span>を指定したり、5つごとを別のul要素で囲み、clearfix的な指定を行うなどという方法が必要となってくる。</p>
+        <p style="float:right;width:50%;">実現したい結果とは異なってくる。<br>これを解決するには、例えば高さをJS使ってゴリゴリ揃えたり、5つごとに<span style="color:red;">clear:left</span>を指定したり、5つごとを別のul要素で囲み、clearfix的な指定を行うなどという方法が必要となってくる。</p>
         <p style="float:right;width:50%;">まあそういった解決方法も全然ありだが、別の解決方法も探ってみよう。</p>
       </div>
     </section>
@@ -505,7 +498,6 @@
         <div class="slide">
           <p style="font-weight: bold;"><a href="http://shared-blog.kddi-web.com/activity/291">CPIスタッフブログ</a>の動画説明の通りに作れば、なんかよくわからなくても作れるよ。<br>ちょっとここのサンプルは少々それに手を加えてる。</p>
           <p>sampleCode：/bootstrap/index.html&nbsp;参照</p>
-          <p><a href="http://codepen.io/reowing728/gpwJMZ" target="_blank">http://codepen.io/reowing728/gpwJMZ</a></p>
         </div>
       </div>
     </section>
@@ -524,8 +516,9 @@
     <section class="slide" id="homework">
       <h2>ホームワーク</h2>
       <p>下記のカンプをちゃんとHTMLとCSSでIE6でも崩れないようにコーディングできたら、<br>まずは超基本編クリアー。気が向いたらやってみて。</p>
-      <p>希望あればコードレビューするのでご連絡を。</p><!--
-   --><p style="display: inline-block; vertical-align: top; margin-right: 20px;">sampleCode/homework</p>
+      <p style="display: inline-block; vertical-align: top; margin-right: 20px;">sampleCode/homework/homework.fw.png</p>
+      <img src="../sampleCode/homework/homework.jpg" width="475" height="450" alt="">
+      <p>希望あればコードレビューするのでご連絡を。</p>
     </section>
 
     <section class="slide" id="ending">
