@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="robots" content="nofollow">
-<title>float DEMO</title>
+<title>inline-block DEMO</title>
 <link rel="stylesheet" href="https://phanleminhthao-cssreset.googlecode.com/hg/reset.min.css">
 <style>
 .wrapper {
@@ -18,28 +18,19 @@ h1 {
 .point {
   margin-bottom: 20px;
 }
-.clearfix{zoom:1}
-.clearfix:after{
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
 .list {
   width: 880px;
   margin: 0 auto;
 }
 .item {
-  float: left;
+  display: inline-block;
+  vertical-align: top;/*垂直方向を上に揃える*/
   width: 160px;
-  /* height: 430px; *//**/
   box-sizing: border-box;
   padding-top: 10px;
-  /* margin-bottom: 20px; */
 }
 .price {
-  display :block;
+  display: block;
   text-align: center;
   color: red;
   font-weight: bold;
@@ -55,61 +46,61 @@ h1 {
 <!-- Start your code here -->
 
 <div class="wrapper">
-  <h1>float使った例</h1>
-  <p class="point">高さを決めて指定するとか、5つごとにulにしてclearfix的なこととかしておかないと、、、、大変なことに。</p>
+  <h1>display: inlineblock;を使った例</h1>
+  <p class="point">高さ指定しなくても揃う！HTMLもシンプルなまま。</p>
 
-  <ul class="clearfix list">
-    <li class="item">
+  <ul class="list"><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-    <li class="item">
+    </li><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713b.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-    <li class="item">
+    </li><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-    <li class="item">
+   </li><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713g.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-    <li class="item">
+    </li><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713r.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-    <li class="item">
+    </li><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-    <li class="item">
+    </li><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713b.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-    <li class="item">
+    </li><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-    <li class="item">
+    </li><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713g.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-    <li class="item">
+    </li><!--
+ --><li class="item">
       <img src="https://raw.githubusercontent.com/reowing728/cssLesson/master/img/103713r.png" width="160" height="145" alt="">
       <span class="price">￥990</span>
       <p class="detail">商品説明商品説明商品説明商品説明商品説明商品説明</p>
-    </li>
-  </ul>
+    </li><!--
+--></ul>
 </div>
 
 <!-- End your code here -->
